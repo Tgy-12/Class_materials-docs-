@@ -1,0 +1,60 @@
+ .auth-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 1px solid #bf1e1e;
+  border-radius: 5px;
+  background: #ded;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.auth-form h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color:#2c3e50;
+}
+#f_name, #l_name, #regYear,#password,#c_password,#stud_id, #email {
+    margin-left: 50px;
+}
+.form-group {
+    margin-bottom: 1rem;
+    /*margin-left: 50px;*/
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width:80%;
+
+    padding: 0.70rem;
+    border:1px solid #e016d2;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    background: #2c3e50;
+    color: rgb(208, 34, 34);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button[type="submit"]:hover {
+    background: #34495e;
+}
+
+small {
+    display: block;
+    margin-top: 0.25rem;
+    color: #666;
+    font-size: 0.8rem;
+}
+ 

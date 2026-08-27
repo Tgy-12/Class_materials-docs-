@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>log_in page</title>
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Course Log in page</h1>
+    </header>
+    <main class="auth-form">
+      <form id="login_form">
+        <h2>Login with ur campass Id(MIT)</h2>
+        <div class="form-group">
+          <label for="userId">MIT ID:</label>
+          <input
+            type="text"
+            id="userId"
+            pattern="mit\/ur\d{6}\/\d{2}"
+            title="Format:mit/urXXXXXX/YY"
+            required
+          />
+          <small>Format: mit/urXXXXXX/YY</small>
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password:</label>
+          <input type="password"
+           id="loginPassword" required />
+        </div>
+        <button type="submit">Login</button>
+        <p>
+          Don't you have an account?<a class="sign" href="Register.html"
+            >Sign up here</a
+          >
+        </p>
+      </form>
+    </main>
+    <script src="js_files/auth.js"></script>
+  </body>
+</html>

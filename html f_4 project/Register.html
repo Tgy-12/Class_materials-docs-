@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registeration</title>
+  
+    <link rel="stylesheet" href="custom.css">
+  </head>
+  <body>
+    <header>
+      <h1>Course Registeration</h1>
+    </header>
+    <main class="auth-form">
+      <form id="signupForm">
+        <h2>Create account</h2>
+        
+        <div class="form-group">
+          <label for="f_name">First_Name:</label>
+          <input type="text" id="f_name" required />
+        </div>
+        <br/>
+        <div class="form-group">
+          <label for="l_name">Last_Name:</label>
+          <input type="text" id="l_name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+        </div>
+       
+        <div class="form-group">
+          <label for="regYear">year of registration:</label>
+          <select id="regYear"><required>
+            <option value="">Select year</option>
+            <option value="20">2020</option>
+            <option value="21">2021</option>
+            <option value="22">2022</option>
+            <option value="23">2023</option>
+            <option value="24">2024</option>
+            <option value="25">2025</option>
+            <option value="26">2026</option>
+            <option value="27">2027</option>
+            <option value="28">2028</option>
+            <option value="29">2029</option>
+            <option value="30">2030</option>
+            <option value="31">2031</option>
+            <option value="32">2032</option>
+            <option value="33">2033</option>
+            <option value="34">2034</option>
+            <option value="35">2035</option>
+            <option value="36">2036</option>          
+          </select>
+        </div>
+        <div class ="form-group">
+            <label for="studentId">ID_number(6-Digit):</label>
+            <input type="text" id="stud_id" pattern="\d{6}"title="plz, enter 6 digits for ur Id"required>
+            <small>Your Id ===> mit/urXXXXXX/YY</small>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+        </div>
+        <div class="form-group">
+          <label for="c_password">Confirm_Password:</label>
+          <input type="password" id="c_password" required>
+        </div>
+        <button type="submit">Register</button>
+        <p>Already have an account? <a class="great" href="log_in.html">Login here</a></p>
+      </form>
+    </main>
+    <script src="js_files/auth.js"></script>
+  </body>
+</html>
