@@ -1,0 +1,164 @@
+/* My_Project/Css_files/custom.css */
+
+/* General Body Styles */
+body {
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Container for centering content */
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Header Styles */
+header {
+    background-color: #2563eb; /* Blue-600 */
+    color: #2f2979;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align nav items to the right */
+}
+
+header nav ul li {
+    margin-left: 1.5rem; /* Space between nav items */
+}
+
+header nav ul li a {
+    color: #ddcdcd;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #5898e7; /* Blue-200 on hover */
+    text-decoration: underline;
+}
+
+/* Main Content Area */
+main {
+    padding: 1.5rem;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1f2937; /* Gray-800 */
+}
+
+h2 {
+    font-size: 2.25rem; /* text-4xl */
+}
+
+h3 {
+    font-size: 1.5rem; /* text-2xl */
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 1rem;
+}
+
+/* Buttons and Links (general styles) */
+.btn {
+    display: inline-block;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.375rem; /* rounded-md */
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #3b82f6; /* Blue-500 */
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #2563eb; /* Blue-600 */
+    transform: translateY(-1px);
+}
+
+/* Course Cards */
+.course-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.course-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+.detail {
+    border: 2px solid gray;
+    color: black;
+    margin-left: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+}
+ul {
+    list-style: none;
+}
+.images {
+    display: flex;
+}
+/* Footer Styles */
+footer {
+    background-color: #1f2937; /* Gray-800 */
+    color: #c93395;
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+footer a {
+    color: #60a5fa; /* Blue-400 */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #93c5fd; /* Blue-300 */
+    text-decoration: underline;
+}
+
+/* Responsive Grid for Course Cards */
+@media (min-width: 768px) { /* md breakpoint */
+    .grid-cols-1.md\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) { /* lg breakpoint */
+    .grid-cols-1.md\:grid-cols-2.lg\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+/* Utility Classes */

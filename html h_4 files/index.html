@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - My Courses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../Css_files/custom.css" />
+    <style>
+      /* Global styles for Inter font */
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex flex-col">
+    <header class="bg-blue-600 text-white p-4 shadow-md">
+      <nav class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">My Courses</h1>
+        <ul class="flex space-x-6">
+        <li><a href="me.html" class="hover:underline">My profile</a></li>
+          <li><a href="index.html" class="hover:underline">Home</a></li>
+          <li><a href="courses.html" class="hover:underline">Courses</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact</a></li>
+          <li>
+            <a href="#" id="logoutButton" class="hover:underline">Logout</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container mx-auto p-6 flex-grow">
+      <h2 class="text-4xl font-extrabold text-gray-800 mb-8 text-center">
+        Welcome to Your Course Dashboard!
+      </h2>
+
+      <p class="text-lg text-gray-700 mb-10 text-center max-w-2xl mx-auto">
+        This course is for those MIT students in all in one form. Explore the
+        exciting courses offered in this batch. Click on a course to learn more
+        and access its content.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+        >
+          <h3 class="text-2xl font-semibold text-blue-700 mb-3">
+            PLP (Programming Logic & Principles)
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Dive into the fundamentals of programming, understanding logic,
+            algorithms, and problem-solving techniques.
+          </p>
+          <a
+            href="courses.html?course=PLP"
+            class="inline-block bg-blue-500 text-white px-5 py-2 rounded-md hover:bg-blue-600 transition duration-300"
+          >
+            View Course
+          </a>
+        </div>
+
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+        >
+          <h3 class="text-2xl font-semibold text-green-700 mb-3">
+            Software Engineering
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Learn about software development methodologies, design patterns,
+            testing, and project management.
+          </p>
+          <a
+            href="courses.html?course=Software"
+            class="inline-block bg-green-500 text-white px-5 py-2 rounded-md hover:bg-green-600 transition duration-300"
+          >
+            View Course
+          </a>
+        </div>
+
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+        >
+          <h3 class="text-2xl font-semibold text-purple-700 mb-3">
+            ADMS (Advanced Database Management Systems)
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Explore advanced concepts in database design, optimization, and
+            administration.
+          </p>
+          <a
+            href="courses.html?course=ADMS"
+            class="inline-block bg-purple-500 text-white px-5 py-2 rounded-md hover:bg-purple-600 transition duration-300"
+          >
+            View Course
+          </a>
+        </div>
+
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+        >
+          <h3 class="text-2xl font-semibold text-red-700 mb-3">
+            Data Communication & Networking
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Understand the principles of data transmission, network protocols,
+            and communication technologies.
+          </p>
+          <a
+            href="courses.html?course=DataComm"
+            class="inline-block bg-red-500 text-white px-5 py-2 rounded-md hover:bg-red-600 transition duration-300"
+          >
+            View Course
+          </a>
+        </div>
+
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+        >
+          <h3 class="text-2xl font-semibold text-yellow-700 mb-3">
+            Web Design & Development
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Learn to create stunning and responsive websites using HTML, CSS,
+            and JavaScript.
+          </p>
+          <a
+            href="courses.html?course=WebDesign"
+            class="inline-block bg-yellow-500 text-white px-5 py-2 rounded-md hover:bg-yellow-600 transition duration-300"
+          >
+            View Course
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-6 text-center mt-8">
+      <div class="container mx-auto">
+        <p class="mb-2">
+          &copy; 2025 Mit 2nd year Courses.All rights reserved.
+        </p>
+        <p class="text-sm">
+          For further clarification, contact me via:
+          <br />
+          <a
+            href="https://web.facebook.com/share/15YUW5zmQv/"
+            target="_blank"
+            class="text-blue-400 hover:underline mx-2"
+            >Facebook</a
+          >
+          |
+          <a
+            href="Email to: tgyare23@gmail.com"
+            class="text-blue-400 hover:underline mx-2"
+            >Email</a
+          >
+          |
+          <a
+            href="https://t.me/acct_exchang_123"
+            target="_blank"
+            class="text-blue-400 hover:underline mx-2"
+            >Telegram</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="../js_files/auth.js"></script>
+    <script src="../js_files/script.js"></script>
+  </body>
+</html>
+<!-- This code provides a home page for the "My Courses" platform, showcasing available courses and allowing users to navigate to course details. -->
